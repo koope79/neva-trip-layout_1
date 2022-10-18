@@ -1,0 +1,223 @@
+.trip_container{
+    margin: 0 auto;
+    max-width: 1106px;
+}
+.trip_card {
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.3px solid #828282;
+    border-radius: 16px;
+    margin: 6% auto;
+    max-width: 341px;
+    
+    .imgBlock{
+        max-width: 423px;
+        max-height: 369px;
+        position: relative;
+
+        .imgBlock__banner{
+            position: absolute;
+            width: 99px;
+            height: 35px;
+            top: 15%;
+            color: white;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 16px 16px 0px 0px;
+        }
+        
+    }
+    .content{
+        flex: 1 1 auto;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .title{
+            order: 2;
+            margin-top: 10px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 22px;
+            color: #404040;
+        }
+
+        .timeTrip{
+            order: 1;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: #9E9E9E;
+            display: flex;
+            align-items: center;
+            gap: 9px;
+        }
+        .description{
+            order: 3;
+            margin-top: 10px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #4B4B4B;
+            li {
+                margin-top: 9px;
+                background: url(../../../public/img/check.png) left 5px no-repeat;
+                padding: 0 0 0 30px;
+
+                &:first-child{
+                    margin-top: 0px;
+                }
+            }
+
+            .description__times{
+            }
+
+            .timeIntervalContent{
+            }
+            
+            .timeInterval{
+                cursor: pointer;
+                display: inline-block;
+                width: 63px;
+                height: 24px;
+                background: #D9E8FF;
+                border-radius: 11px;
+                margin-right: 4px;
+                margin-top: 10px;
+                text-align: center;
+                p {
+                    color: #343434;
+                    padding: 1px;
+                }
+
+                &:hover{
+                    background: #6BA6FF;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+                    p{
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+
+        .price{
+            order: 4;
+            margin-top: 35px;
+            color: #000000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .currentPrice{
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 20px;
+
+                .dockPrice{
+                    font-size: 10px;
+                }
+            }
+
+            .buttonInfo{                
+                button {
+                    cursor: pointer;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;            
+                    color: #404040;
+                    width: 165px;
+                    height: 44px;
+                    background: #FED74B;
+                    border: 0.5px solid #CBA500;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .trip_card {
+        flex-wrap: nowrap;
+        max-width: 100%;
+        margin: 5% 5%;
+        .imgBlock {
+            width: 473px;
+            flex-shrink: 0;
+            .imgBlock__banner{
+                width: 154px;
+                height: 42px;
+                font-size: 16px;
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 16px 0px 0px 16px;
+            }
+        }
+
+        .content {
+            .title{
+                display: flex;
+                flex-wrap: nowrap;
+                order: 1;
+                margin-bottom: 10px;
+                margin-top: 0px;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 34px;
+                color: #000000;
+            }
+            .timeTrip{
+                order: 2;
+                font-size: 14px;
+            }
+            .description{
+                font-size: 18px;
+                line-height: 20px;
+                color: #343434;
+                flex: 1 1 auto;
+
+                .timeIntervalContent{
+                    display: inline;
+                    margin-left: 10px;
+                }
+                .timeInterval{
+                    font-size: 16px;
+                    margin-top: 0px;
+                }
+            }
+            .price{
+                margin-top: 0px;
+                justify-content: flex-start;
+
+                .currentPrice{
+                    font-size: 36px;
+                    .dockPrice{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .buttonInfo{
+                margin-left: 10px;
+                button {
+                    width: 187px;
+                    height: 52px;
+                }
+            }
+        }
+    }
+}

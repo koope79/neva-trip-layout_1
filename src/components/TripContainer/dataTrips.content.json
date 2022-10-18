@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "img": "img/image_1.png",
+        "title": "Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020",
+        "banner": {"logo": "Новинка", "color": "#099CE8"},
+        "timeIntervals": ["12:00", "12:30", "12:45"],
+        "price": 900,
+        "isOnDock": true
+    },
+    {
+        "id": 2,
+        "img": "img/image_2.jpeg",
+        "title": "Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020",
+        "banner": {"logo": "Круглый год", "color": "#FFD83B"},
+        "timeIntervals": ["12:00", "12:30", "12:45", "13:00", "13:45"],
+        "price": 2900,
+        "isOnDock": false
+    },
+    {
+        "id": 3,
+        "img": "img/image_3.jpg",
+        "title": "Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020",
+        "banner": {"logo": "Новинка", "color": "#099CE8"},
+        "timeIntervals": ["12:00", "12:30", "12:45", "13:00", "13:30", "13:45"],
+        "price": 900,
+        "isOnDock": true
+    }
+]
