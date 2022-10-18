@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./TripCard.scss";
 import clock_icon from "../../assets/img/clock.svg";
 import ruble_icon from "../../assets/img/ruble.svg";
-import { useState } from 'react';
 
 export const TripCard = ({ img, title, banner, timeIntervals, price, isOnDock}) => {
     const [moreTimes, setMoreTimes] = useState(false);
