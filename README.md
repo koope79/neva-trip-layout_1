@@ -1,6 +1,6 @@
 # Neva Trip task layout 1
 
-[neva-trip App](https://neva-trip-layout-1.vercel.app/)
+Ссылка на приложение: [neva-trip App](https://neva-trip-layout-1.vercel.app/)
 
 ## Требования
 
